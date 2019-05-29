@@ -1,0 +1,6 @@
+<!-- Include a polyfill for ES6 (optional) for IE11 -->
+<!--PROMISE ().then()-->
+<script src="https://cdn.jsdelivr.net/npm/promise-polyfill@8/dist/polyfill.js"></script>
+
+<!--ARROW function () => {} -->
+<script src="https://cdn.jsdelivr.net/npm/babel-plugin-transform-es2015-arrow-functions@6.22.0/lib/index.min.js"></script>
