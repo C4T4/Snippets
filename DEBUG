@@ -1,16 +1,16 @@
 <?php	
-      $var = 'IM BUG';
+	  $var = 'IM BUG';
+
+
+	  $_data = [
+		'debug' => 0,
+		'name' => 'form_fields',
+		'data' => json_encode([$var])
+	];
       
-      
-      $_data = [
-				'debug' => 0,
-				'name' => 'form_fields',
-				'data' => json_encode([$var])
-			];
-      
-			$ch = curl_init('https://waack.info/debug');
-			curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-			curl_setopt($ch, CURLOPT_POSTFIELDS, $_data);
-			curl_exec($ch);
-			curl_close($ch);
+	$ch = curl_init('https://waack.info/debug');
+	curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+	curl_setopt($ch, CURLOPT_POSTFIELDS, $_data);
+	curl_exec($ch);
+	curl_close($ch);
 ?>
